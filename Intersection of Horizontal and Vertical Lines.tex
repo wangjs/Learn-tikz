@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{tikz}
+
+%%display in the middle
+\usepackage{verbatim}
+\usepackage[active,tightpage,delayed]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{10pt}%
+
+%\usetikzlibrary{fadings}
+%\tikzfading[name=fade out,
+%  inner color=transparent!0, outer color=transparent!100]
+
+\begin{document}
+
+\begin{tikzpicture} 
+	\draw (0,0) circle (0.05);
+
+  \path (30:1cm) node(p1) {$p_1$}   (75:1cm) node(p2) {$p_2$}; 
+	
+  \draw (-0.2,0) -- (1.2,0) node(xline)[right] {$q_1$}; 
+  \draw (2,-0.2) -- (2,1.2) node(yline)[above] {$q_2$}; 
+
+  \draw[->] (p1) -- (p1 |- xline); 
+  \draw[->] (p2) -- (p2 |- xline); 
+  \draw[->] (p1) -- (p1 -| yline); 
+  \draw[->] (p2) -- (p2 -| yline); 
+\end{tikzpicture}	   
+\end{document}

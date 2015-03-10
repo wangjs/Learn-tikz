@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.12)  10 MAR 2015 19:38
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.12)  10 MAR 2015 21:43
 entering extended mode
-**Temp.tex
-("G:\luosaiyu\working bench\Learn tikz\Temp.tex"
+**Phasor-diagram.tex
+("G:\luosaiyu\working bench\Learn tikz\Phasor-diagram.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (D:\CTEX\MiKTeX\tex\latex\base\article.cls
@@ -337,7 +337,7 @@ hreplacing.code.tex))
 (D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorat
 ions.shapes.code.tex
 (D:\CTEX\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.sha
-pes.code.tex))) ("G:\luosaiyu\working bench\Learn tikz\Temp.aux")
+pes.code.tex))) ("G:\luosaiyu\working bench\Learn tikz\Phasor-diagram.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
 LaTeX Font Info:    ... okay on input line 87.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
@@ -372,29 +372,29 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 92.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 92.
-runsystem(gnuplot Temp.current.gnuplot)...disabled (restricted).
+runsystem(gnuplot Phasor-diagram.current.gnuplot)...executed.
 
-runsystem(gnuplot Temp.current.gnuplot)...disabled (restricted).
+runsystem(gnuplot Phasor-diagram.current.gnuplot)...executed.
 
-runsystem(gnuplot Temp.current.gnuplot)...disabled (restricted).
+runsystem(gnuplot Phasor-diagram.current.gnuplot)...executed.
 
  [1
 
 {D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
-("G:\luosaiyu\working bench\Learn tikz\Temp.aux") ) 
+("G:\luosaiyu\working bench\Learn tikz\Phasor-diagram.aux") ) 
 Here is how much of TeX's memory you used:
- 10803 strings out of 495354
- 218057 string characters out of 3183858
- 271199 words of memory out of 3000000
- 13782 multiletter control sequences out of 15000+200000
+ 10902 strings out of 495354
+ 220256 string characters out of 3183858
+ 271206 words of memory out of 3000000
+ 13881 multiletter control sequences out of 15000+200000
  6379 words of font info for 23 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,6n,60p,411b,628s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/CTEX/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-mi8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on Temp.pdf (1 page, 38919 bytes).
+ 56i,6n,60p,421b,628s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/CTEX/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/
+CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on Phasor-diagram.pdf (1 page, 39919 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

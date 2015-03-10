@@ -1,0 +1,15 @@
+\documentclass[border=2pt]{standalone}
+\usepackage{pgfplots}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+        axis x line=middle, 
+        axis y line=middle, 
+        ymax=0.1E8, ylabel=$y$, 
+        xlabel=$x$
+        ]
+    \addplot[domain=-10000:10000, blue, ultra thick] {14*x - x^2};
+\end{axis}
+\end{tikzpicture}
+\end{document}

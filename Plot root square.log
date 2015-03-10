@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.12)  10 MAR 2015 19:38
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.12)  10 MAR 2015 16:33
 entering extended mode
-**Temp.tex
-("G:\luosaiyu\working bench\Learn tikz\Temp.tex"
+**Plot*root*square.tex
+("G:\luosaiyu\working bench\Learn tikz\Plot root square.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (D:\CTEX\MiKTeX\tex\latex\base\article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(D:\CTEX\MiKTeX\tex\latex\base\size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(D:\CTEX\MiKTeX\tex\latex\base\size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -21,14 +21,19 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(D:\CTEX\MiKTeX\tex\latex\base\ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-)
+(D:\CTEX\MiKTeX\tex\latex\base\inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(D:\CTEX\MiKTeX\tex\latex\base\latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
 (D:\CTEX\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
 (D:\CTEX\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
 (D:\CTEX\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty
 (D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks14
+\pgfutil@everybye=\toks16
 )
 (D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfutil-latex.def
 \pgfutil@abb=\box26
@@ -47,7 +52,7 @@ Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (D:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks15
+\KV@toks@=\toks17
 )
 (D:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
@@ -79,11 +84,11 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 
 (D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks16
-\pgfkeys@temptoks=\toks17
+\pgfkeys@pathtoks=\toks18
+\pgfkeys@temptoks=\toks19
 
 (D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks18
+\pgfkeys@tmptoks=\toks20
 ))
 \pgf@x=\dimen105
 \pgf@y=\dimen106
@@ -146,9 +151,9 @@ Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 \pgfmath@dimen=\dimen113
 \pgfmath@count=\count94
 \pgfmath@box=\box27
-\pgfmath@toks=\toks19
-\pgfmath@stack@operand=\toks20
-\pgfmath@stack@operation=\toks21
+\pgfmath@toks=\toks21
+\pgfmath@stack@operand=\toks22
+\pgfmath@stack@operation=\toks23
 )
 (D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.code.tex
 (D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex)
@@ -260,8 +265,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
 Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
 \pgffor@iter=\dimen139
 \pgffor@skip=\dimen140
-\pgffor@stack=\toks22
-\pgffor@toks=\toks23
+\pgffor@stack=\toks24
+\pgffor@toks=\toks25
 ))
 (D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
 Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
@@ -295,108 +300,71 @@ File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
 (D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths
 .code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
-)))
-(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorat
-ions.code.tex
-(D:\CTEX\MiKTeX\tex\generic\pgf\modules\pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen148
-\pgfdecoratedremainingdistance=\dimen149
-\pgfdecoratedinputsegmentcompleteddistance=\dimen150
-\pgfdecoratedinputsegmentremainingdistance=\dimen151
-\pgf@decorate@distancetomove=\dimen152
-\pgf@decorate@repeatstate=\count107
-\pgfdecorationsegmentamplitude=\dimen153
-\pgfdecorationsegmentlength=\dimen154
-)
-\tikz@lib@dec@box=\box35
-)
-(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryarrows.
-code.tex
-File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
- (D:\CTEX\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
-\arrowsize=\dimen155
-))
-(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarysnakes.
-code.tex
-File: tikzlibrarysnakes.code.tex 2008/02/05 v2.10 (rcs-revision 1.6)
-
-
-Package tikz Warning: Snakes have been superseded by decorations. Please use th
-e decoration libraries instead of the snakes library on input line 14.
-
-
-(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorat
-ions.pathmorphing.code.tex
-(D:\CTEX\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pat
-hmorphing.code.tex))
-(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorat
-ions.pathreplacing.code.tex
-(D:\CTEX\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pat
-hreplacing.code.tex))
-(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorat
-ions.shapes.code.tex
-(D:\CTEX\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.sha
-pes.code.tex))) ("G:\luosaiyu\working bench\Learn tikz\Temp.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
+))) ("G:\luosaiyu\working bench\Learn tikz\Plot root square.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
 
 ABD: EveryShipout initializing macros
 (D:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen156
-\scratchbox=\box36
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen157
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count107
+\scratchdimen=\dimen148
+\scratchbox=\box35
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen149
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
+\everyMPtoPDFconversion=\toks27
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 92.
+(Font)              <7> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 92.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 92.
-runsystem(gnuplot Temp.current.gnuplot)...disabled (restricted).
+(Font)              <5> on input line 15.
+runsystem(gnuplot Plot*root*square.x.gnuplot)...disabled (restricted).
 
-runsystem(gnuplot Temp.current.gnuplot)...disabled (restricted).
 
-runsystem(gnuplot Temp.current.gnuplot)...disabled (restricted).
 
- [1
+Package pgf Warning: Plot data file `Plot*root*square.x.table' not found. on in
+put line 17.
 
-{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
-("G:\luosaiyu\working bench\Learn tikz\Temp.aux") ) 
+runsystem(gnuplot Plot*root*square.sin.gnuplot)...disabled (restricted).
+
+
+Package pgf Warning: Plot data file `Plot*root*square.sin.table' not found. on 
+input line 19.
+
+runsystem(gnuplot Plot*root*square.exp.gnuplot)...disabled (restricted).
+
+
+Package pgf Warning: Plot data file `Plot*root*square.exp.table' not found. on 
+input line 21.
+
+)
+! Emergency stop.
+<*> Plot*root*square.tex
+                        
+*** (job aborted, no legal \end found)
+
+ 
 Here is how much of TeX's memory you used:
- 10803 strings out of 495354
- 218057 string characters out of 3183858
- 271199 words of memory out of 3000000
- 13782 multiletter control sequences out of 15000+200000
- 6379 words of font info for 23 fonts, out of 3000000 for 9000
+ 9470 strings out of 495354
+ 180321 string characters out of 3183858
+ 212515 words of memory out of 3000000
+ 12492 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,6n,60p,411b,628s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/CTEX/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-mi8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on Temp.pdf (1 page, 38919 bytes).
-PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 56i,6n,55p,407b,515s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
