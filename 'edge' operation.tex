@@ -3,17 +3,17 @@
 
 \begin{document}
 \begin{tikzpicture}
-\node (a) at (0:1) {$a$};
-\node (b) at (90:1) {$b$};
-\node (c) at (180:1) {$c$};
-\node (d) at (270:1) {$d$};
+	\node (a) at (0:1) {$a$};
+	\node (b) at (90:1) {$b$};
+	\node (c) at (180:1) {$c$};
+	\node (d) at (270:1) {$d$};
 	\foreach \name/\angle in {a/0,b/90,c/180,d/270}
 	\node (\name) at (\angle:1) {$\name$};
 	\path[->] (b) edge (a)
-	edge (c)
-	edge [-,dotted] (d)
-	(c) edge (a)
-	edge (d)
-	(d) edge (a);
+								edge (c)
+								edge [-,dotted] (d)
+						(c) edge (a)
+								edge (d)
+						(d) edge (a);
 \end{tikzpicture}
 \end{document}
