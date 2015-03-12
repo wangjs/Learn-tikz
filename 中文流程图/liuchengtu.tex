@@ -1,0 +1,109 @@
+%  此文件是liuchengtu.tex 因为在TikzEdt中可以实时看到结果。但不支持中文，
+% 所以分两文件写，主文件用来编辑中文。
+
+\begin{tikzpicture}[
+%定义格式
+%箭头的模式是latex 默认模式
+>=latex,
+%两个结点距离
+node distance=5mm,
+% hv path 表示一个结点到另一个结点是先水平再垂直。vh 相反。skip loop 表示
+%垂直-水平-垂直 vskip loop 表示水平-垂直-水平
+hv path/.style={to path={-| (\tikztotarget)}},
+vh path/.style={to path={|- (\tikztotarget)}},
+skip loop/.style={to path={-- ++(0,#1) -| (\tikztotarget)}},
+vskip loop/.style={to path={-- ++(#1,0) |- (\tikztotarget)}},
+%开始结束框模式
+startend/.style={
+draw,
+rectangle,
+rounded corners=2mm,
+minimum size = 6mm,
+thick
+},
+%输入输出模式
+ioput/.style = {
+draw,
+trapezium,
+trapezium left angle=60, trapezium right angle=120,
+inner sep = 5pt
+},
+%处理框模式
+ chuli/.style={
+ draw,
+rectangle,
+minimum size=6mm,
+thick,
+font=\itshape
+},
+%判断模式
+ panduan/.style={
+ draw,
+diamond,
+minimum size=6mm,
+shape aspect=3,
+inner sep = 0.1pt,
+thick,
+font=\itshape
+}
+]
+%----------------------------------模板----------------------------------------
+%设置点及位置
+%
+%\node (a) [startend] {start};
+%\node (b) [ioput,below = of a] {input integer l,m,n};
+%\node (c) [panduan,below = of b,font=\small] {$l^2+m^2+n^2=0$};
+%\node (d) [chuli,below = of c,yshift = 5pt,font=\small] {$y=70l+21m+15n$};
+%\node (e) [panduan,below = of d,yshift=-10mm,font=\small] {$y>105$};
+%\node (f) [ioput,below = of e] {output y};
+%\node (g) [startend,below = of f] {end};
+%
+%\node (h) [chuli,below left = of d] {$y=105$};
+%\node (i) [chuli,below right = of d,yshift=-5pt] {$y=y-105$};
+%%画线
+%\path     (a) edge[->]        (b)
+%           (b) edge[->]        (c)
+%        (c) edge[->]        (d)
+%        (d) edge[->]        (e)
+%        (e) edge[->]        (f)
+%        (f) edge[->]        (g);
+%
+%\path    (h)    edge [<-,vh path]      (c);
+%\path    (h)    edge [->,vh path]         ($(e.south)!0.5!(f.north)$);
+%\path    (i)    edge [->,vh path]      ($(d.south)+(0,-2mm)$);
+%\path    (i)    edge [<-,vh path]         (e);
+%
+%%写标签
+%\node at (-2.1,-2.3) {是};
+%\node at (0.45,-6.5) {否};
+%-------------------------------------------------模板-------------------------------------------
+\node (a) [startend] {开始};
+\node (b) [chuli,below = of a] {$M=0,N=0,i=1$};
+\node (c) [chuli,below = of b] {产生$0\sim1$之间的两个随机数分别赋给$x_i,y_i$};
+\node (d) [panduan,below = of c ] {$x^2+y^2 \leq 1$};
+\node (e) [chuli,below = of d] {$M=M+1$};
+\node (f) [chuli,below = of e] {$i=i+1$};
+\node (g) [panduan,below = of f ] {$i>1000$};
+\node (h) [chuli,below = of g,minimum width = 2cm] {};
+\node (i) [ioput,below = of h ]{输出P};
+\node (j) [ioput,below = of i ]{结束};
+\node (k)[chuli,right = of e] {$N = N+1$};
+\path     (a) edge[->]        (b)
+           (b) edge[->]        (c)
+        (c) edge[->]        (d)
+        (d) edge[->]        (e)
+        (e) edge[->]        (f)
+        (f) edge[->]        (g)
+        (g) edge[->]        (h)
+        (h) edge[->]        (i)
+        (i) edge[->]        (j);
+\path (g.west) edge [->,vskip loop=-3cm]         ($(b.south)!.5!(c.north)$);
+\path (d) edge [->,hv path]         (k);
+\path (k) edge [->,vh path]         ($(e)!.5!(f)$);
+
+
+\node at (2,-3.35) {否};
+
+\node at (0.35,-4.3) {是};
+\node at (-1.55,-6.9) {否};
+\end{tikzpicture}

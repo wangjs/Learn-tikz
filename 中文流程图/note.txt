@@ -1,0 +1,7 @@
+\documentclass{ctexart}
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn} 
+
+\end{CJK*}{UTF8}{gbsn} 
+\end{document}

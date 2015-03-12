@@ -1,4 +1,3 @@
-%& -shell-escape
 % Phasor diagram
 % Author: Urs Zellweger (urs@zellweger.li)
 % GNUPLOT required
@@ -80,23 +79,12 @@
     }
     % angular velocity \omega
     \draw[->, xshift=-4cm]  (120:2.4cm) arc (120:170:2) node[below] {$\omega$};
+
 \end{tikzpicture}
 }
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \begin{document}
-<<<<<<< HEAD
-\begin{tikzpicture}
-\node (shape) at (0,2) [draw] {|class Shape|};
-\node (rect) at (-2,0) [draw] {|class Rectangle|};
-\node (circle) at (2,0) [draw] {|class Circle|};
-\node (ellipse) at (6,0) [draw] {|class Ellipse|};
-\draw (node cs:name=circle,anchor=north) |- (0,1);
-\draw (node cs:name=ellipse,anchor=north) |- (0,1);
-\draw[-open triangle 90] (node cs:name=rect,anchor=north)
-|- (0,1) -| (node cs:name=shape,anchor=south);
-\end{tikzpicture}
-=======
 
 
 % usage: {alpha}{phasedifferenceUI}{voltage}{current}{Ualpha}{Ialpha}
@@ -110,5 +98,4 @@
 \ZeigerdiagrammText{60}{90}{2.7}{1.8}
 
 
->>>>>>> d09475db8d1279deeb2002ecdc2baa97185701a1
 \end{document}
