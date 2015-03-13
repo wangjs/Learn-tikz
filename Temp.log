@@ -1,22 +1,13 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.12)  12 MAR 2015 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.13)  13 MAR 2015 16:36
 entering extended mode
 **Temp.tex
-(E:\Learn-tikz\Temp.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-(E:\CTEX\MiKTeX\tex\latex\base\article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(E:\CTEX\MiKTeX\tex\latex\base\size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(Temp.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 68 languages loaded.
+("E:\Program Files\CTEX\MiKTeX\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("E:\Program Files\CTEX\MiKTeX\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -30,42 +21,413 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(E:\CTEX\MiKTeX\tex\latex\base\ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+("E:\Program Files\CTEX\MiKTeX\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("E:\Program Files\CTEX\MiKTeX\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-(E:\CTEX\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
-(E:\CTEX\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
-(E:\CTEX\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty
-(E:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfutil-common.tex
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("E:\Program Files\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("E:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("E:\Program Files\CTEX\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty"
+("E:\Program Files\CTEX\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty"
+("E:\Program Files\CTEX\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty"
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfutil-common.tex"
 \pgfutil@everybye=\toks14
 \pgfutil@tempdima=\dimen103
 \pgfutil@tempdimb=\dimen104
 
-(E:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfutil-common-lists.tex))
-(E:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfutil-latex.def
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfutil-common-lists.t
+ex")) ("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfutil-latex.de
+f"
 \pgfutil@abb=\box26
+ ("E:\Program Files\CTEX\MiKTeX\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex"
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+))
+Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
+
+("E:\Program Files\CTEX\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty"
+("E:\Program Files\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("E:\Program Files\CTEX\MiKTeX\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("E:\Program Files\CTEX\MiKTeX\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("E:\Program Files\CTEX\MiKTeX\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("E:\Program Files\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+("E:\Program Files\CTEX\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty"
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex"
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks16
+\pgfkeys@temptoks=\toks17
+
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfkeysfiltered.code.t
+ex"
+\pgfkeys@tmptoks=\toks18
+))
+\pgf@x=\dimen107
+\pgf@y=\dimen108
+\pgf@xa=\dimen109
+\pgf@ya=\dimen110
+\pgf@xb=\dimen111
+\pgf@yb=\dimen112
+\pgf@xc=\dimen113
+\pgf@yc=\dimen114
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count88
+\c@pgf@countb=\count89
+\c@pgf@countc=\count90
+\c@pgf@countd=\count91
+\t@pgf@toka=\toks19
+\t@pgf@tokb=\toks20
+\t@pgf@tokc=\toks21
+ ("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-common-pdf.de
+f"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.
+tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count92
+\pgfsyssoftpath@bigbuffer@items=\count93
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.
+tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex"
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathutil.code.tex")
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen115
+\pgfmath@count=\count94
+\pgfmath@box=\box27
+\pgfmath@toks=\toks22
+\pgfmath@stack@operand=\toks23
+\pgfmath@stack@operation=\toks24
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.code.tex"
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.basic.code
+.tex")
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.trigonomet
+ric.code.tex")
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.random.cod
+e.tex")
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.comparison
+.code.tex")
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.base.code.
+tex")
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.round.code
+.tex")
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.misc.code.
+tex")
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.integerari
+thmetics.code.tex")))
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count95
+))
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepoints.code.te
+x"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen116
+\pgf@picmaxx=\dimen117
+\pgf@picminy=\dimen118
+\pgf@picmaxy=\dimen119
+\pgf@pathminx=\dimen120
+\pgf@pathmaxx=\dimen121
+\pgf@pathminy=\dimen122
+\pgf@pathmaxy=\dimen123
+\pgf@xx=\dimen124
+\pgf@xy=\dimen125
+\pgf@yx=\dimen126
+\pgf@yy=\dimen127
+\pgf@zx=\dimen128
+\pgf@zy=\dimen129
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathconstruct.
+code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen130
+\pgf@path@lasty=\dimen131
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathusage.code
+.tex"
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
+\pgf@shorten@end@additional=\dimen132
+\pgf@shorten@start@additional=\dimen133
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorescopes.code.te
+x"
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+\pgfpic=\box28
+\pgf@hbox=\box29
+\pgf@layerbox@main=\box30
+\pgf@picture@serial@count=\count96
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoregraphicstate.c
+ode.tex"
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
+\pgflinewidth=\dimen134
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransformation
+s.code.tex"
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
+\pgf@pt@x=\dimen135
+\pgf@pt@y=\dimen136
+\pgf@pt@temp=\dimen137
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
+"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreobjects.code.t
+ex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathprocessing
+.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorearrows.code.te
+x"
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
+\pgfarrowsep=\dimen138
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
+"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen139
+\pgf@sys@shading@range@num=\count97
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
+"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreexternal.code.
+tex"
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+\pgfexternal@startupbox=\box31
+))
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorelayers.code.te
+x"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransparency.c
+ode.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepatterns.code.
+tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
+"
+File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+\pgfnodeparttextbox=\box32
+) ("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\modules\pgfmoduleplot.code.tex
+"
+File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+)
+("E:\Program Files\CTEX\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-0-65
+.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen140
+\pgf@nodesepend=\dimen141
+)
+("E:\Program Files\CTEX\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-1-18
+.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
+)) ("E:\Program Files\CTEX\MiKTeX\tex\latex\pgf\utilities\pgffor.sty"
+("E:\Program Files\CTEX\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty"
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex"))
+("E:\Program Files\CTEX\MiKTeX\tex\latex\pgf\math\pgfmath.sty"
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex"))
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
+
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex")
+\pgffor@iter=\dimen142
+\pgffor@skip=\dimen143
+\pgffor@stack=\toks25
+\pgffor@toks=\toks26
+))
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+"
+Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers
+.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+\pgf@plot@mark@count=\count98
+\pgfplotmarksize=\dimen144
+)
+\tikz@lastx=\dimen145
+\tikz@lasty=\dimen146
+\tikz@lastxsaved=\dimen147
+\tikz@lastysaved=\dimen148
+\tikzleveldistance=\dimen149
+\tikzsiblingdistance=\dimen150
+\tikz@figbox=\box33
+\tikz@figbox@bg=\box34
+\tikz@tempbox=\box35
+\tikz@tempbox@bg=\box36
+\tikztreelevel=\count99
+\tikznumberofchildren=\count100
+\tikznumberofcurrentchild=\count101
+\tikz@fig@count=\count102
+
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\modules\pgfmodulematrix.code.tex
+"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count103
+\pgfmatrixcurrentcolumn=\count104
+\pgf@matrix@numberofcolumns=\count105
+)
+\tikz@expandcount=\count106
+
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tik
+zlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+)))
+("E:\Program Files\CTEX\MiKTeX\tex\latex\tools\verbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks27
+\verbatim@line=\toks28
+\verbatim@in@stream=\read2
+)
+("E:\Program Files\CTEX\MiKTeX\tex\latex\preview\preview.sty"
+Package: preview 2010/02/14 11.88 (AUCTeX/preview-latex)
+
+("E:\Program Files\CTEX\MiKTeX\tex\latex\preview\prtightpage.def"
+\PreviewBorder=\dimen151
+)
+\pr@snippet=\count107
+\pr@box=\box37
+\pr@output=\toks29
+)
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tik
+zlibraryshadows.code.tex"
+File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.0 (rcs-revision 1.3)
+
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tik
+zlibraryfadings.code.tex"
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.0 (rcs-revision 1.2)
+
+("E:\Program Files\CTEX\MiKTeX\tex\generic\pgf\libraries\pgflibraryfadings.code
+.tex"
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.0 (rcs-revision 1.3)
+))) (Temp.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+
+("E:\Program Files\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count108
+\scratchdimen=\dimen152
+\scratchbox=\box38
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen153
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks31
+) ABD: EveryShipout initializing macros
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 41.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 41.
+
+Overfull \hbox (5.28056pt too wide) in paragraph at lines 41--41
+[][][][]$[]$  
+ []
 
 
-! LaTeX Error: File `everyshi.sty' not found.
+Overfull \hbox (110.47191pt too wide) in paragraph at lines 158--158
+[][] 
+ []
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.112 \EveryShipout
-                   {%
-*** (cannot \read from terminal in nonstop modes)
-
- 
+Preview: Tightpage -327680 -327680 327680 327680
+[1{E:/Program Files/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sf
+d}}] (Temp.aux) ) 
 Here is how much of TeX's memory you used:
- 477 strings out of 493921
- 6884 string characters out of 3152570
- 54784 words of memory out of 3000000
- 3835 multiletter control sequences out of 15000+200000
- 3940 words of font info for 15 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 32i,0n,19p,191b,36s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 11261 strings out of 493698
+ 230670 string characters out of 3144040
+ 457574 words of memory out of 3000000
+ 14408 multiletter control sequences out of 15000+200000
+ 4545 words of font info for 17 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 55i,8n,78p,407b,788s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mss10.pfb><E:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb>
+Output written on Temp.pdf (1 page, 62450 bytes).
+PDF statistics:
+ 50 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+

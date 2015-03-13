@@ -1,114 +1,160 @@
-%& -shell-escape
-% Phasor diagram
-% Author: Urs Zellweger (urs@zellweger.li)
-% GNUPLOT required
-\documentclass[11pt]{article}
-\usepackage{ifthen}
-\usepackage{tikz}
-\usepackage{pgf}
-\usepackage{pgffor}
-\usepgfmodule{shapes}
-\usepgfmodule{plot}
-\usetikzlibrary{decorations}
-\usetikzlibrary{arrows}
-\usetikzlibrary{snakes}
+% Clusters of atoms
+% Author: Agustin E. Bolzan
+\documentclass{article}
+\usepackage[gray]{xcolor}
+\usepackage{tikz,pgffor}
+%%%<
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+%%%>
 
-\newcommand{\Gitter}[4]{
-    \draw[very thin,color=gray] (#1,#3) grid (#2,#4);
-}
-\newcommand{\Koordinatenkreuz}[6]{
-    \draw[->, >=latex, color=green!50!black] (#1,0) -- (#2,0) node[right] {#5};
-    \draw[->, >=latex, color=green!50!black] (0,#3) -- (0,#4) node[left] {#6};
-}
-\newcommand{\KoordinatenkreuzOhneLabelsVerschobenKeinPfeil}[5]{
-    \draw[-] (#1,0) -- (#2,0);
-    \draw[-] (#5,#3) -- (#5,#4);
+\begin{comment}
+:Title: Clusters of atoms
 
-}
-\newcommand{\ZeigerdiagrammText}[4]{
-\begin{tikzpicture}[scale=.72, samples=100, >=latex]
+A three dimensional illustration of various clusters of atoms. 
 
-    \def\Alpha{#1}
-    \def\Phase{#2}
-    \def\AmplitudeSpannung{#3}
-    \def\AmplitudeStrom{#4}
-    \def\SpannungsWert{{\AmplitudeSpannung*sin(\Alpha)}}
-    \def\StromWert{{\AmplitudeStrom*sin(\Alpha+\Phase)}}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \def\FarbeSpannung{blue!90!white}
-    \def\FarbeStrom{red!90!white}
-    \def\FarbeWinkelZeichnung{green}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \def\Beta{\Alpha+\Phase}
-    \def\AlphaRad{\Alpha*3.141592654/180}
-    \def\PhaseRad{\Phase*3.141592654/180}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \Gitter{-.1}{7.1}{-3.1}{3.1}
-    \Koordinatenkreuz{-.2}{7.3}{-3.2}{3.3}{$\omega t$}{}
-    \draw (1.570795,0) node[below]{$\frac{\pi}{2}$};
-    \draw (3.14159,0) node[below]{${\pi}$};
-    \draw (4.71238898,0) node[below]{$\frac{3\pi}{2}$};
-    \draw (6.283185307,0) node[below]{${2\pi}$};
-    \draw (-4,0) circle (3cm);
-    \KoordinatenkreuzOhneLabelsVerschobenKeinPfeil{-7.2}{-.8}{-3.6}{3.6}{-4}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{comment}
 
-    % voltage
-    \draw[color=\FarbeSpannung, very thick] plot[id=voltage, domain=0:7] function{\AmplitudeSpannung*sin(x)} node[right] {$U(t)$};
-    % voltage circle
-    \draw[color=\FarbeSpannung, loosely dashed] (-4,0) circle (\AmplitudeSpannung cm);
-    % angle
-    \draw[color=\FarbeWinkelZeichnung!50!black, thick] (\AlphaRad, \SpannungsWert)--(\AlphaRad,\StromWert) node[below=18pt] {$\alpha$};
-    % angle in the circle
-    \filldraw[fill=\FarbeWinkelZeichnung!20,draw=\FarbeWinkelZeichnung!50!black] (-4,0) -- (-3,0) arc (0:\Alpha:1) -- cycle node[right] {$\alpha$};
-    % voltage pointer
-    \draw[<-,color=\FarbeSpannung, very thick] (\Alpha:\AmplitudeSpannung)++(-4,0) --(-4,0);
-    \draw[color=\FarbeSpannung,  dashed] (\Alpha:\AmplitudeSpannung)++(-4,0) -- (\AlphaRad,\SpannungsWert);
-    % current
-    \draw[color=\FarbeStrom, very thick] plot[id=current, domain=0:7] function{\AmplitudeStrom*sin(x+\PhaseRad)} node[right] {$I(t)$};		
-    % current circle
-    \draw[color=\FarbeStrom, loosely dashed]    (-4,0) circle (\AmplitudeStrom cm);
-    % current pointer
-    \draw[<-,color=\FarbeStrom, very thick] (\Beta:\AmplitudeStrom)++(-4,0) --(-4,0);
-    \draw[color=\FarbeStrom,  dashed](\Beta:\AmplitudeStrom)++(-4,0) -- (\AlphaRad,\StromWert);
-    % phase difference
-    \ifthenelse{\Phase<0}{
-        \draw[snake=brace] (pi/2 ,3.3)--(pi/2-\PhaseRad ,3.3) node[above=7pt, left=10pt] {$\phi$};
-    }
-    {
-        \draw[snake=brace] (pi/2-\PhaseRad ,3.3)--(pi/2 ,3.3) node[above=7pt, left=10pt] {$\phi$};
-    }
-    % angular velocity \omega
-    \draw[->, xshift=-4cm]  (120:2.4cm) arc (120:170:2) node[below] {$\omega$};
-\end{tikzpicture}
-}
-% % % % % % % % % % % % % % % % % % % % % % % % % % %
-
+\usetikzlibrary{shadows}
 \begin{document}
-<<<<<<< HEAD
+
+
+%\begin{figure}
+\centering
 \begin{tikzpicture}
-\node (shape) at (0,2) [draw] {|class Shape|};
-\node (rect) at (-2,0) [draw] {|class Rectangle|};
-\node (circle) at (2,0) [draw] {|class Circle|};
-\node (ellipse) at (6,0) [draw] {|class Ellipse|};
-\draw (node cs:name=circle,anchor=north) |- (0,1);
-\draw (node cs:name=ellipse,anchor=north) |- (0,1);
-\draw[-open triangle 90] (node cs:name=rect,anchor=north)
-|- (0,1) -| (node cs:name=shape,anchor=south);
+%\draw[help lines] (0,0) grid (10,10); %used just for visualising the positions of objects during construction
+
+\begin{scope}[yshift=-180,yslant=0.5,xslant=-1]
+    %the rectangular surface onto which the clusters are located
+    \filldraw[black!10,very thick] (0.5,1) rectangle (10,7);
+    %circle circumventing the smallest cluster 
+    \node[circle,circular glow,fill=red!20,draw=red,thick]
+    at (4.1,4.9) {\phantom{perimetro}};
+\end{scope}
+
+%atom clusters are rotated for a better visualisation
+\begin{scope}[rotate around = {-5:(0,0,0)}]
+    %text describing the objects in the picture
+    \draw[-latex,thick] (6,3) node[right,text width=3cm] 
+        {$\mathsf{potent\; perimeter\; sites}$} to [out=180,in=0] (4.5,1);
+    \draw[-latex,thick](3,-1)node[right]
+        {$\mathsf{Non-metallic\; molecule}$} to[out=180,in=0] (2.6,-3);
+    \draw[-latex,thick](-3,-1)node[above]
+        {$\mathsf{extra \; electron}$} to[out=-90,in=180] (-1.4,-2);
+
+    %now we start with the clusters (maybe this code could be improved by a tikz expert)
+    %the layers are built starting from the very lowest one
+
+    %largest cluster
+    %first row
+    \foreach \x  in {1.5,2,2.5,3,3.5,4}%
+        \shadedraw [ball color= red] (\x,1,-0.5) circle (0.25cm);
+    \foreach \x  in {1.25,1.75,2.25,2.75,3.25,3.75,4.25}%
+        \shadedraw [ball color= red] (\x,1,0) circle (0.25cm);
+    \foreach \x  in {1,1.5,2,2.5,3,3.5,4,4.5}%
+        \shadedraw [ball color= red] (\x,1,0.5) circle (0.25cm);
+    \foreach \x  in {0.75,1.25,1.75,2.25,2.75,3.25,3.75,4.25,4.75}%
+        \shadedraw [ball color= red] (\x,1,1) circle (0.25cm);
+    \foreach \x  in {0.5,1,1.5,2,2.5,3,3.5,4,4.5,5}%
+        \shadedraw [ball color= red] (\x,1,1.5) circle (0.25cm);
+    \foreach \x  in {0.5,1,1.5,2,2.5,3,3.5,4,4.5,5}
+        \shadedraw [ball color=red] (\x,1,2) circle (0.25cm);
+    \foreach \x  in {0.75,1.25,1.75,2.25,2.75,3.25,3.75,4.25,4.75}%
+        \shadedraw [ball color= red] (\x,1,2.5) circle (0.25cm);
+    \foreach \x  in {1,1.5,2,2.5,3,3.5,4,4.5}%
+        \shadedraw [ball color= red] (\x,1,3) circle (0.25cm);
+    \foreach \x  in {1.25,1.75,2.25,2.75,3.25,3.75,4.25}%
+        \shadedraw [ball color= red] (\x,1,3.5) circle (0.25cm);
+    \foreach \x  in {1.5,2,2.5,3,3.5,4}%
+        \shadedraw [ball color= red] (\x,1,4) circle (0.25cm);
+    %second row 
+    \foreach \x  in {1.75,2.25,2.75,3.25,3.75}
+        \shadedraw [ball color=yellow] (\x,1.5,0) circle (0.25cm);
+    \foreach \x  in {1.5,2,2.5,3,3.5,4}
+        \shadedraw [ball color=yellow] (\x,1.5,0.5) circle (0.25cm);
+    \foreach \x  in {1.25,1.75,2.25,2.75,3.25,3.75,4.25}
+        \shadedraw [ball color=yellow] (\x,1.5,1) circle (0.25cm);
+    \foreach \x  in {1,1.5,2,2.5,3,3.5,4,4.5}
+        \shadedraw [ball color=yellow] (\x,1.5,1.5) circle (0.25cm);
+    \foreach \x  in {0.75,1.25,1.75,2.25,2.75,3.25,3.75,4.25,4.75}
+        \shadedraw [ball color=yellow] (\x,1.5,2) circle (0.25cm);
+    \foreach \x  in {1,1.5,2,2.5,3,3.5,4,4.5}
+        \shadedraw [ball color=yellow] (\x,1.5,2.5) circle (0.25cm);
+    \foreach \x  in {1.25,1.75,2.25,2.75,3.25,3.75,4.25}
+        \shadedraw [ball color=yellow] (\x,1.5,3) circle (0.25cm);
+    \foreach \x  in {1.5,2,2.5,3,3.5,4}
+        \shadedraw [ball color=yellow] (\x,1.5,3.5) circle (0.25cm);
+    \foreach \x  in {1.75,2.25,2.75,3.25,3.75}
+        \shadedraw [ball color=yellow] (\x,1.5,4) circle (0.25cm);
+    %third row 
+    \foreach \x  in {2,2.5,3,3.5}
+        \shadedraw [ball color=yellow] (\x,2,1) circle (0.25cm);
+    \foreach \x  in {1.75,2.25,2.75,3.25,3.75}
+        \shadedraw [ball color=yellow] (\x,2,1.5) circle (0.25cm);
+    \foreach \x  in {1.5,2,2.5,3,3.5,4}
+        \shadedraw [ball color=yellow] (\x,2,2) circle (0.25cm);
+    \foreach \x  in {1.25,1.75,2.25,2.75,3.5,3.75,4.25}
+        \shadedraw [ball color=yellow] (\x,2,2.5) circle (0.25cm);
+    \foreach \x  in {1.5,2,2.5,3,3.5,4}
+        \shadedraw [ball color=yellow] (\x,2,3) circle (0.25cm);
+    \foreach \x  in {1.75,2.25,2.75,3.25,3.75}
+        \shadedraw [ball color=yellow] (\x,2,3.5) circle (0.25cm);
+    \foreach \x  in {2,2.5,3,3.5}
+        \shadedraw [ball color=yellow] (\x,2,4) circle (0.25cm);
+    %fourth row
+    \foreach \x  in {2.25,2.75,3.25}
+        \shadedraw [ball color=yellow] (\x,2.5,2) circle (0.25cm);
+    \foreach \x  in {2,2.5,3,3.5}
+        \shadedraw [ball color=yellow] (\x,2.5,2.5) circle (0.25cm);
+    \foreach \x  in {1.75,2.25,2.75,3.25,3.75}
+        \shadedraw [ball color=yellow] (\x,2.5,3) circle (0.25cm);
+    \foreach \x  in {2,2.5,3,3.5}
+        \shadedraw [ball color=yellow] (\x,2.5,3.5) circle (0.25cm);
+    \foreach \x  in {2.25,2.75,3.25}
+        \shadedraw [ball color=yellow] (\x,2.5,4) circle (0.25cm);
+
+    %medium cluster
+    %first row
+    \foreach \x  in {6.75,7.25}
+        \shadedraw [ball color=yellow] (\x,2.5,13) circle (0.25cm);
+    \foreach \x  in {6.5,7,7.5}
+        \shadedraw [ball color=yellow] (\x,2.5,13.5) circle (0.25cm);
+    \foreach \x  in {6.25,6.75,7.25,7.75}
+        \shadedraw [ball color=yellow] (\x,2.5,14) circle (0.25cm);
+    \foreach \x  in {6.5,7,7.5}
+        \shadedraw [ball color=yellow] (\x,2.5,14.5) circle (0.25cm);
+    \foreach \x  in {6.75,7.25}
+        \shadedraw [ball color=yellow] (\x,2.5,15) circle (0.25);
+
+    %second row
+    \foreach \x  in {7} %this foreach is used to be general, but it makes no sense if we put just one sphere!
+        \shadedraw [ball color=yellow] (\x,3,13.25) circle (0.25cm);
+    \foreach \x  in {6.75,7.25}
+        \shadedraw [ball color=yellow] (\x,3,13.75) circle (0.25cm);
+    \foreach \x  in {6.5,7,7.5}
+        \shadedraw [ball color=yellow] (\x,3,14.25) circle (0.25cm);
+    \foreach \x  in {6.75,7.25}
+        \shadedraw [ball color=yellow] (\x,3,14.75) circle (0.25cm);
+    \foreach \x  in {7}
+        \shadedraw [ball color=yellow] (\x,3,15.25) circle (0.25);
+
+    %smallest cluster of atoms
+
+    \foreach \x in {2.75,3.25,3.75}
+        \shadedraw [ball color = gray] (\x,2,10) circle (0.25);
+    \foreach \x in {3,3.5}
+        \shadedraw [ball color=gray] (\x,2,10.5) circle (0.25);
+    \shadedraw [ball color = gray] (3.25,2,11) circle (0.25);
+    \foreach \x in {3,3.5}
+        \shadedraw [ball color = gray] (3,2.5,10.25) circle (0.25);
+    \shadedraw [ball color = gray] (3.5,2.5,11) circle (0.25);
+
+    \shadedraw [ball color=gray] (2,1,12.5) circle(0.25);
+    \draw[-latex,thick](-4,-3)node[above]
+        {$\mathsf{single \; metal\; atom}$} to[out=-90,in=180] (-3,-4);
+\end{scope}
 \end{tikzpicture}
-=======
-
-
-% usage: {alpha}{phasedifferenceUI}{voltage}{current}{Ualpha}{Ialpha}
-% resistor
-\ZeigerdiagrammText{60}{0}{2.7}{1.8}
-
-% inductivity / coil
-\ZeigerdiagrammText{60}{-90}{2.7}{1.8}
-
-% capacity / conductor
-\ZeigerdiagrammText{60}{90}{2.7}{1.8}
-
-
->>>>>>> d09475db8d1279deeb2002ecdc2baa97185701a1
-\end{document}
+%\end{figure}
+\end{document} 
