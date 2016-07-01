@@ -1,0 +1,40 @@
+% Author : Alain Matthes
+% Source : http://altermundus.com/pages/examples.html
+\documentclass[]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[upright]{fourier}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,decorations.pathmorphing}
+\usepackage{verbatim}
+
+\begin{comment}
+:Title: Matrix multiplication
+:Use page: 1
+
+Illustration of how to compute the product of two matrices.
+
+:Source: `Altermundus.com`_
+
+.. _Altermundus.com: http://altermundus.com/pages/examples.html
+\end{comment}
+
+\begin{document}
+
+\begin{tikzpicture}
+\matrix [draw, column sep=1cm, nodes=draw]
+{
+\node(a) {123}; & \node (b) {1}; & \node {1}; \\
+\node {12}; & \node {12}; & \node {1}; \\
+\node(c) {1}; & \node (d) {123}; & \node {1}; \\
+};
+\draw [red, thick] (a.east) -- (a.east |- c)
+(d.west) -- (d.west |- b);
+\draw [<->,red, thick] (a.east) -- (d.west |- b)
+node [above, midway] {1cm};
+\end{tikzpicture}
+\end{document}
+
+% encoding : utf8
+% format   : pdfLaTeX
+% author   : Alain Matthes

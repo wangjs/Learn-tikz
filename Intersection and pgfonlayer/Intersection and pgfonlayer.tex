@@ -1,0 +1,97 @@
+\documentclass[10pt]{article}
+%%%<
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+%%%>
+
+\usepackage{verbatim} % for comment below
+\begin{comment}
+Intersections of Arbitrary Paths        
+\end{comment}
+
+\usepackage{amsmath,amssymb} % for \dfrac and \tfrac
+\usepackage{tikz}
+\usetikzlibrary{calc} % for calculation of coordinates in tikz
+\usetikzlibrary{intersections}
+
+\newcommand{\DefaultName}[5]{
+\begin{tikzpicture}[every node/.style={opacity=1, black, above left}]
+    \draw [name path=ellipse] (2,0.5) ellipse (0.75cm and 1cm);
+    \draw [name path=rectangle, rotate=#1] (0.5,0.5) rectangle +(2,1);
+    \fill [red, opacity=0.5, name intersections={of=ellipse and rectangle}]
+        (intersection-1) circle (2pt) node {1} % default name is intersection-1 and intersection-2 .etc
+        (intersection-2) circle (2pt) node {2};
+% Background
+\begin{pgfonlayer}{background}
+    \node (tl) at (#2cm,#3cm) {};
+    \node (br) at (#4cm,#5cm) {};
+
+    \path[fill=brown!20] (tl) rectangle (br);
+\end{pgfonlayer}        
+\end{tikzpicture}        
+}
+
+\newcommand{\NameTotal}[0]{
+    \begin{tikzpicture}        
+    \clip (-2,-2) rectangle (2,2);
+    \draw [name path=curve 1] (-2,-1) .. controls (8,-1) and (-8,1) .. (2,1);
+    \draw [name path=curve 2] (-1,-2) .. controls (-1,8) and (1,-8) .. (1,2);
+    \fill [name intersections={of=curve 1 and curve 2, name=i, total=\t}]   % <prefix>=i
+          [red, opacity=0.5, every node/.style={above left, black, opacity=1}]
+          \foreach \s in {1,...,\t}{(i-\s) circle (2pt) node {\footnotesize\s}};  % (<prefix>-<number>) is the coordinate of the intersection just like (1,2)
+
+    \end{tikzpicture}
+}
+
+\newcommand{\By}[0]{
+    \begin{tikzpicture}        
+    \clip (-2,-2) rectangle (2,2);
+    \draw [name path=curve 1] (-2,-1) .. controls (8,-1) and (-8,1) .. (2,1);
+    \draw [name path=curve 2] (-1,-2) .. controls (-1,8) and (1,-8) .. (1,2);
+    \fill [name intersections={of=curve 1 and curve 2, by={a,b}}]        
+        (a) circle (2pt)
+        (b) circle (2pt);
+    \end{tikzpicture}
+}
+
+\newcommand{\ByLable}[0]{
+    \begin{tikzpicture}        
+    \clip (-2,-2) rectangle (2,2);
+    \draw [name path=curve 1] (-2,-1) .. controls (8,-1) and (-8,1) .. (2,1);
+    \draw [name path=curve 2] (-1,-2) .. controls (-1,8) and (1,-8) .. (1,2);
+    \fill [name intersections={
+            of=curve 1 and curve 2, 
+            by={[label=center:a],[label=center:...],[label=center:i]}}];        
+    \end{tikzpicture}
+}
+
+\newcommand{\SortBy}[0]{
+    \begin{tikzpicture}        
+    \clip (-0.5,-0.75) rectangle (3.25,2.25);
+    \foreach \pathname/\shift in {line/0cm, curve/2cm}{
+        \tikzset{xshift=\shift}
+        \draw [->, name path=curve] (1,1.5) .. controls (-1,1) and (2,0.5) .. (0,0);
+        \draw [->, name path=line] (0,-.5) -- (1,2);
+        \fill [name intersections={of=line and curve, sort by=\pathname, name=i, total=\t}]
+            [red, opacity=0.5, every node/.style={left=.25cm, black, opacity=1}]
+            \foreach \s in {1,...,\t}{(i-\s) circle (2pt) node {\footnotesize\s}};
+    }
+    \end{tikzpicture}
+}
+
+\begin{document}
+
+% Define the layers to draw the diagram
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+
+\begin{preview}
+    \DefaultName{10}{-0.2}{2.8}{4}{-2.3}
+    \NameTotal
+    \By
+    \ByLable
+    \SortBy
+\end{preview}
+\end{document}
